@@ -110,7 +110,7 @@ public class TutorialController {
 	@GetMapping("/tutorials/published")
 	public ResponseEntity<List<Tutorial>> findByPublished() {
 		try {
-			List<Tutorial> tutorials = tutorialRepository.findByPublished(true);
+			List<Tutorial> tutorials = tutorialRepository.findAllPublished();
 
 			if (tutorials.isEmpty()) {
 				return new ResponseEntity<>(HttpStatus.NO_CONTENT);
