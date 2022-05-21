@@ -9,3 +9,5 @@ services:
       POSTGRES_USER: "postgres"
       POSTGRES_DB: "testdb"
       POSTGRES_PASSWORD: "123"
+    volumes:
+      - ./src/main/resources/init.sql:/docker-entrypoint-initdb.d/init.sql
