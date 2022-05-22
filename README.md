@@ -12,7 +12,7 @@ An Angular 13 application that can be used as is from https://github.com/bezkode
 
 ### Backend (this repo):
 
-A Spring Boot application that was forked from https://github.com/bezkoder/spring-boot-jpa-postgresql with minor adjustments. You have to run `docker-compose up` in the root directory to initialize the PostgreSQL database we're using, then run the app itself from your IDE or via `mvn spring-boot:run`
+A Spring Boot application that was forked from https://github.com/bezkoder/spring-boot-jpa-postgresql with minor adjustments. Run `docker-compose up` in the root directory to initialize the PostgreSQL database we're using and launch the backend app that connects to it in a single step
 
 If both processes are running, you should be seeing a few tutorial records in the UI.
 

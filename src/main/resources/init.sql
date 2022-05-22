@@ -18,7 +18,7 @@ VALUES (2, 'Second tutorial', 'Description of second tutorial', true) ON CONFLIC
 
 INSERT INTO tutorials
 (id, title, description, published)
-VALUES (2, 'Third tutorial', 'Description of third tutorial', true) ON CONFLICT DO NOTHING;
+VALUES (3, 'Third tutorial', 'Description of third tutorial', true) ON CONFLICT DO NOTHING;
 
 
 -- the stored procedures (functions) we'll be using. i am assuming here that this similar
