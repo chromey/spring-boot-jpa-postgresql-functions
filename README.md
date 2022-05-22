@@ -8,11 +8,12 @@ The setup consists of a frontend and a backend application.
 
 ### Frontend:
 
-An Angular 13 application that can be used as is from https://github.com/bezkoder/angular-13-crud-example. After cloning the repo, run `npm install` to install, then `ng serve --port 8081` to run. The UI should be available under http://localhost:8081.
+An Angular 13 application that can be used as is from https://github.com/bezkoder/angular-13-crud-example. After cloning the repo, run `npm install` to install, then `npm start -- --port 8081` to run in a command shell. The UI should be available under http://localhost:8081.
 
 ### Backend (this repo):
 
-A Spring Boot application that was forked from https://github.com/bezkoder/spring-boot-jpa-postgresql with minor adjustments. Run `docker-compose up` in the root directory to initialize the PostgreSQL database we're using and launch the backend app that connects to it in a single step
+A Spring Boot application that was forked from https://github.com/bezkoder/spring-boot-jpa-postgresql with minor adjustments. 
+Start docker desktop, than run `docker-compose up` in a command shell in the root directory from the spring boot application to initialize the PostgreSQL database we're using and launch the backend app that connects to it in a single step
 
 If both processes are running, you should be seeing a few tutorial records in the UI.
 
